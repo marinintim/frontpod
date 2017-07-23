@@ -53,11 +53,12 @@ const Podcast = (props) => {
         header {
           display: grid;
           grid-template-columns: 50px 1fr;
-          grid-column-gap: 1.6rem;
+          grid-column-gap: .7rem;
         }
         header img {
           display: block;
           padding-bottom: 1rem;
+          max-height: 50px;
         }
 
         header h1 {
