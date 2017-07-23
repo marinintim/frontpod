@@ -24,5 +24,4 @@ const Data = {
   ]
 }
 
-if (module) module.exports = Data
 export default Data
