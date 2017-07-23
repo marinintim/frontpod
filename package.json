@@ -8,7 +8,8 @@
     "build": "next build",
     "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile-data": "sed 's/export default/module.exports =/' data.js >data.module.js"
+    "transpile-data": "sed 's/export default/module.exports =/' data.js >data.module.js",
+    "build-static": "npm run transpile-data && npm run build && npm run export"
   },
   "keywords": [],
   "author": "",
