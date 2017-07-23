@@ -21,7 +21,7 @@ const Week = (props) => {
           padding: 1rem;
           box-sizing: border-box;
         }
-        @media screen and (min-width: 300px) {
+        @media screen and (min-width: 400px) {
           main {
             grid-column-gap: 2rem;
             grid-template-columns: repeat(3, 1fr);
