@@ -7,11 +7,13 @@
     "dev": "node server.js",
     "build": "next build",
     "export": "next export",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile-data": "sed 's/export default/module.exports =/' data.js >data.module.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browser": "last 2 versions",
   "dependencies": {
     "express": "^4.15.3",
     "next": "^2.4.7",
