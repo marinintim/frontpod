@@ -20,6 +20,16 @@ const Data = {
       ],
       icon: 'https://i1.sndcdn.com/avatars-000202051699-d6qlyg-t50x50.jpg',
       url: 'https://soundcloud.com/web-standards/'
+    },
+    {
+      name: 'Пятиминутка React',
+      slug: '5minreact',
+      day: 'четверг',
+      hosts: [
+        'Пётр Мязин'
+      ],
+      icon: 'http://5minreact.ru/2c00ecdc6a709de28a58308b628f1b47.png',
+      url: 'https://soundcloud.com/5minreact'
     }
   ]
 }
