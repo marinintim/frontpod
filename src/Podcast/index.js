@@ -8,15 +8,18 @@ const Podcast = (props) => {
         <Link as={`/podcast/${props.slug}`} href={`/podcast?slug=${props.slug}`}><a>{props.name}</a></Link>
         <style jsx>{`
           img {
+            border: 1px solid #666;
             max-height: 1rem;
+            min-width: 16px;
             display: inline-block;
             margin-right: 0.2rem;
             vertical-align: -0.2rem;
           }
           a {
             text-decoration: none;
+            font-size: 1rem;
             color: #333;
-            font-family: ff-meta-web-pro, Arial, sans-serif;
+            font-family: Helvetica Neue, Arial, sans-serif;
           }
           div {
             word-break: none;
@@ -63,12 +66,12 @@ const Podcast = (props) => {
 
         header h1 {
           margin-top: .7rem;
-          font-family: ff-meta-web-pro, Arial, sans-serif;
+          font-family: futura-pt-bold, Arial, sans-serif;
 
         }
         header h2 {
           grid-column: span 2;
-          font-family: ff-meta-web-pro, Arial, sans-serif;
+          font-family: futura-pt-bold, Arial, sans-serif;
           font-weight: normal;
         }
 

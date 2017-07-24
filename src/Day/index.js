@@ -16,11 +16,16 @@ const Day = (props) => {
      <style jsx>{`
         h2 {
           font-size: inherit;
-          font-family: ff-meta-web-pro, Arial, sans-serif;
+          font-family: futura-pt-bold, Arial, sans-serif;
         }
         ul {
           list-style: none;
           padding-left: 0;
+        }
+
+        p {
+          font-size: 1rem;
+          font-family: Helvetica Neue, Arial, sans-serif;
         }
       `}</style>
     </div>

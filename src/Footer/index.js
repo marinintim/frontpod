@@ -5,7 +5,7 @@ const Footer = () => (
     <style jsx>{`
     footer {
       padding: 1rem;
-      font: .7rem/1.618 ff-meta-web-pro, Arial, sans-serif;
+      font: .7rem/1.618 Helvetica Neue, Arial, sans-serif;
     }
     `}</style>
   </footer>
