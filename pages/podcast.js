@@ -27,7 +27,7 @@ const PodcastPage = (props) => {
         <style jsx global>{`
           .PodcastPage {
             display: grid;
-            grid-template-rows: 1rem 3rem 1fr auto;
+            grid-template-rows: 3rem 1fr auto;
             grid-row-gap: 1.6rem;
             min-height: 100vh;
           }
