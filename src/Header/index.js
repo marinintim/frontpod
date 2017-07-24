@@ -1,19 +1,19 @@
+import Link from 'next/link'
+
 const Header = (props) => (
   <header className="header">
     {
       props.withDescription
         ? <h1>FrontPod: расписание подкастов про фронтенд</h1>
-        : <h2>FrontPod</h2>
+        : <h2><Link href="/"><a>FrontPod</a></Link></h2>
     }
-    {props.withDescription && <p>Большинство подкастов выходит по довольно чёткому расписанию, на этой странице собраны русскоязычные подкасты,
-      которые так или иначе связаны со фронтендом.
-    </p>}
+    {props.withDescription && <p>Большинство подкастов про фронтенд выходит по довольно чёткому расписанию, вот оно.</p>}
     {props.withDescription && <p>Заметили ошибку или хотите добавить свой подкаст? Присылайте <a href="https://github.com/marinintim/frontpod">пуллреквест</a> или 
        пишите в <a href="https://twitter.com/marinintim">твиттере</a>.
     </p>}
     <style jsx>{`
       h1, h2 {
-        font-family: ff-meta-web-pro, Arial, sans-serif;
+        font-family: futura-pt-bold, Arial, sans-serif;
       }
       h2 {
         margin-top: 0;
@@ -21,6 +21,16 @@ const Header = (props) => (
       }
       header {
         padding: 1rem;
+      }
+
+      p {
+        font-family: Helvetica Neue, Arial, sans-serif;
+        font-size: 1rem;
+      }
+
+      h2 a {
+        color: inherit;
+        text-decoration: none;
       }
     `}</style>
   </header>
