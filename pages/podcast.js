@@ -1,3 +1,5 @@
+import Helmet from 'react-helmet'
+import Layout from '../src/Layout'
 import Podcast from '../src/Podcast'
 import Header from '../src/Header'
 import Footer from '../src/Footer'
@@ -8,26 +10,30 @@ const PodcastPage = (props) => {
   const current = props.url.query.slug
   const podcast = props.podcasts.filter(p => p.slug === current)[0]
   return (
-    <div className="PodcastPage">
-      <Link href="/"><a>&larr; назад к расписанию</a></Link>
-      <Header />
-      <Podcast {...podcast} view="large" />
-      <Footer />
-      <style jsx>{`
-        a {
-          text-decoration: none;
-          color: inherit;
-        }
-      `}</style>
-      <style jsx global>{`
-        .PodcastPage {
-          display: grid;
-          grid-template-rows: 1rem 3rem 1fr auto;
-          grid-row-gap: 1.6rem;
-          min-height: 100vh;
-        }
-      `}</style>
-    </div>
+    <Layout>
+      <div className="PodcastPage">
+        <Helmet>
+          <title>Расписание подкаста {podcast.name} на FrontPod</title>
+        </Helmet>
+        <Header />
+        <Podcast {...podcast} view="large" />
+        <Footer />
+        <style jsx>{`
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        `}</style>
+        <style jsx global>{`
+          .PodcastPage {
+            display: grid;
+            grid-template-rows: 1rem 3rem 1fr auto;
+            grid-row-gap: 1.6rem;
+            min-height: 100vh;
+          }
+        `}</style>
+      </div>
+    </Layout>
   )
 }
 
