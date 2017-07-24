@@ -65,24 +65,30 @@ const Podcast = (props) => {
         }
 
         header h1 {
-          margin-top: .7rem;
+          margin-top: -.5rem;
           font-family: futura-pt-bold, Arial, sans-serif;
-
+          font-size: 3rem;
         }
         header h2 {
           grid-column: span 2;
-          font-family: futura-pt-bold, Arial, sans-serif;
+          font-family: Helvetica Neue, Arial, sans-serif;
           font-weight: normal;
+          margin-top: -.5rem;
         }
 
         .listen {
           font-size: 1rem;
         }
 
+        p {
+          font-size: 1rem;
+          font-family: Helvetica Neue, Arial, sans-serif;
+        }
+
         .run-in {
           display: inline-block;
           color: #666;
-          margin-right: .7rem;
+          margin-right: .5rem;
         }
       `}</style>
     </article>
